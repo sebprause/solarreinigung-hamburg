@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutz | Solarreinigung Hamburg</title>
+    <meta name="description" content="Datenschutzerklärung von Solarreinigung Hamburg‚">
+    <meta name="robots" content="noindex, follow">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                        display: ['Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0f4f8',
+                            100: '#d9e2ec',
+                            200: '#bcccdc',
+                            300: '#9fb3c8',
+                            400: '#829ab1',
+                            500: '#627d98',
+                            600: '#486581',
+                            700: '#334e68',
+                            800: '#243b53',
+                            900: '#1e3a5f',
+                        },
+                        accent: {
+                            50: '#fdf8f3',
+                            100: '#f9e8d8',
+                            200: '#f2d2b3',
+                            300: '#e8b88e',
+                            400: '#d4a574',
+                            500: '#c9956b',
+                            600: '#b8805a',
+                            700: '#a06b4b',
+                            800: '#88563d',
+                            900: '#704530',
+                        },
+                        cream: '#F8F7F2',
+                        charcoal: '#2d3748',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            background-color: #F8F7F2;
+            color: #2d3748;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        .font-display {
+            font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+        }
+        
+        .accent-line {
+            width: 60px;
+            height: 3px;
+            background-color: #d4a574;
+            margin-bottom: 1.5rem;
+        }
+        
+        .ds-section {
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+        
+        .ds-section:last-of-type {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .ds-heading {
+            color: #1e3a5f;
+            font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .ds-heading:first-child {
+            margin-top: 0;
+        }
+        
+        .ds-subheading {
+            color: #334e68;
+            font-weight: 600;
+            font-size: 1.125rem;
+            margin-bottom: 0.75rem;
+            margin-top: 1.5rem;
+        }
+        
+        .ds-text {
+            color: #4a5568;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        
+        .ds-list {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: #4a5568;
+        }
+        
+        .ds-list li {
+            margin-bottom: 0.5rem;
+            line-height: 1.7;
+        }
+        
+        .highlight-box {
+            background-color: #f0f4f8;
+            border-left: 4px solid #1e3a5f;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .warning-box {
+            background-color: #fff5f5;
+            border-left: 4px solid #e53e3e;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+        
+        @media (min-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .info-item {
+            background-color: #f7fafc;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .info-label {
+            font-size: 0.875rem;
+            color: #627d98;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+            font-weight: 600;
+        }
+        
+        .toc-link {
+            display: block;
+            padding: 0.5rem 0;
+            color: #1e3a5f;
+            text-decoration: none;
+            border-bottom: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        
+        .toc-link:hover {
+            color: #d4a574;
+            padding-left: 0.5rem;
+        }
+        
+        .toc-link:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="/" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                    <div class="w-10 h-10 rounded bg-primary-900 flex items-center justify-center text-white">
+                        <i data-lucide="sun" class="w-6 h-6"></i>
+                    </div>
+                    <span class="font-display font-bold text-xl tracking-tight text-primary-900">
+                        Solarreinigung<span class="text-accent-400">Hamburg</span>
+                    </span>
+                </a>
+                <a href="/" class="flex items-center gap-2 text-gray-600 hover:text-primary-900 transition-colors font-medium">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                    Zurück zur Startseite
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Header -->
+            <div class="mb-12">
+                <div class="accent-line"></div>
+                <h1 class="font-display text-4xl md:text-5xl font-bold text-primary-900 mb-4">Datenschutzerklärung</h1>
+                <p class="text-gray-600 text-lg">Informationen zum Umgang mit Ihren personenbezogenen Daten</p>
+            </div>
+
+            <!-- Table of Contents -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-8">
+                <h2 class="font-display text-lg font-bold text-primary-900 mb-4 flex items-center gap-2">
+                    <i data-lucide="list" class="w-5 h-5"></i>
+                    Inhaltsverzeichnis
+                </h2>
+                <nav class="space-y-1">
+                    <a href="#ueberblick" class="toc-link">1. Datenschutz auf einen Blick</a>
+                    <a href="#hosting" class="toc-link">2. Hosting</a>
+                    <a href="#hinweise" class="toc-link">3. Allgemeine Hinweise und Pflichtinformationen</a>
+                    <a href="#erfassung" class="toc-link">4. Datenerfassung auf dieser Website</a>
+                </nav>
+            </div>
+
+            <!-- Content -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8 md:p-12">
+                
+                <!-- Section 1 -->
+                <section id="ueberblick" class="ds-section">
+                    <h2 class="font-display text-2xl font-bold text-primary-900 mb-6 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0">
+                            <span class="text-primary-900 font-bold">1</span>
+                        </div>
+                        Datenschutz auf einen Blick
+                    </h2>
+                    
+                    <h3 class="ds-subheading">Allgemeine Hinweise</h3>
+                    <p class="ds-text">
+                        Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.
+                    </p>
+
+                    <h3 class="ds-subheading">Datenerfassung auf dieser Website</h3>
+                    
+                    <div class="highlight-box">
+                        <p class="font-semibold text-primary-900 mb-2">Wer ist verantwortlich für die Datenerfassung auf dieser Website?</p>
+                        <p class="ds-text mb-0">
+                            Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle" in dieser Datenschutzerklärung entnehmen.
+                        </p>
+                    </div>
+
+                    <p class="font-semibold text-primary-900 mb-2">Wie erfassen wir Ihre Daten?</p>
+                    <p class="ds-text">
+                        Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben.
+                    </p>
+                    <p class="ds-text">
+                        Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.
+                    </p>
+
+                    <p class="font-semibold text-primary-900 mb-2">Wofür nutzen wir Ihre Daten?</p>
+                    <p class="ds-text">
+                        Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden. Sofern über die Website Verträge geschlossen oder angebahnt werden können, werden die übermittelten Daten auch für Vertragsangebote, Bestellungen oder sonstige Auftragsanfragen verarbeitet.
+                    </p>
+
+                    <div class="warning-box">
+                        <p class="font-semibold text-red-800 mb-2 flex items-center gap-2">
+                            <i data-lucide="shield-alert" class="w-5 h-5"></i>
+                            Welche Rechte haben Sie bezüglich Ihrer Daten?
+                        </p>
+                        <p class="ds-text mb-0 text-red-900">
+                            Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Section 2 -->
+                <section id="hosting" class="ds-section">
+                    <h2 class="font-display text-2xl font-bold text-primary-900 mb-6 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0">
+                            <span class="text-primary-900 font-bold">2</span>
+                        </div>
+                        Hosting
+                    </h2>
+                    
+                    <p class="ds-text">
+                        Wir hosten die Inhalte unserer Website bei folgendem Anbieter:
+                    </p>
+
+                    <h3 class="ds-subheading">Externes Hosting</h3>
+                    <p class="ds-text">
+                        Diese Website wird extern gehostet. Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters / der Hoster gespeichert. Hierbei kann es sich v. a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert werden, handeln.
+                    </p>
+                    
+                    <p class="ds-text">
+                        Das externe Hosting erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren potenziellen und bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und effizienten Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO). Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs.1 TDDDG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im Endgerät des Nutzers (z. B. Device-Fingerprinting) im Sinne des TDDDG umfasst. Die Einwilligung ist jederzeit widerrufbar.
+                    </p>
+
+                    <div class="bg-primary-50 border border-primary-200 rounded-lg p-6">
+                        <p class="font-semibold text-primary-900 mb-2">Unser(e) Hoster:</p>
+                        <p class="ds-text mb-0">
+                            <strong>Cloudflare, Inc.</strong><br>
+                            101 Townsend St.<br>
+                            San Francisco, CA 94107<br>
+                            USA
+                        </p>
+                    </div>
+
+                    <p class="ds-text mt-4">
+                        Unser(e) Hoster wird bzw. werden Ihre Daten nur insoweit verarbeiten, wie dies zur Erfüllung seiner Leistungspflichten erforderlich ist und unsere Weisungen in Bezug auf diese Daten befolgen.
+                    </p>
+                </section>
+
+                <!-- Section 3 -->
+                <section id="hinweise" class="ds-section">
+                    <h2 class="font-display text-2xl font-bold text-primary-900 mb-6 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0">
+                            <span class="text-primary-900 font-bold">3</span>
+                        </div>
+                        Allgemeine Hinweise und Pflichtinformationen
+                    </h2>
+                    
+                    <h3 class="ds-subheading">Datenschutz</h3>
+                    <p class="ds-text">
+                        Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
+                    </p>
+                    <p class="ds-text">
+                        Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.
+                    </p>
+                    <p class="ds-text">
+                        Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
+                    </p>
+
+                    <h3 class="ds-subheading">Hinweis zur verantwortlichen Stelle</h3>
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
+                        <p class="ds-text mb-4">
+                            Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
+                        </p>
+                        <p class="font-semibold text-primary-900 mb-1">KP Gebäudedienste UG (haftungsbeschränkt)</p>
+                        <p class="ds-text mb-4">
+                            Beerbuschstieg 10a<br>
+                            22395 Hamburg
+                        </p>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <p class="info-label">Telefon</p>
+                                <p class="font-semibold text-primary-900">040/22633763</p>
+                            </div>
+                            <div class="info-item">
+                                <p class="info-label">E-Mail</p>
+                                <p class="font-semibold text-primary-900 break-all">kontakt@hausmeisterei.net</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="ds-text mt-4">
+                        Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.
+                    </p>
+
+                    <h3 class="ds-subheading">Speicherdauer</h3>
+                    <p class="ds-text">
+                        Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z. B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe.
+                    </p>
+
+                    <h3 class="ds-subheading">Allgemeine Hinweise zu den Rechtsgrundlagen der Datenverarbeitung</h3>
+                    <p class="ds-text">
+                        Sofern Sie in die Datenverarbeitung eingewilligt haben, verarbeiten wir Ihre personenbezogenen Daten auf Grundlage von Art. 6 Abs.1 lit. a DSGVO bzw. Art. 9 Abs. 2 lit. a DSGVO, sofern besondere Datenkategorien nach Art. 9 Abs. 1 DSGVO verarbeitet werden. Im Falle einer ausdrücklichen Einwilligung in die Übertragung personenbezogener Daten in Drittstaaten erfolgt die Datenverarbeitung außerdem auf Grundlage von Art. 49 Abs. 1 lit. a DSGVO. Sofern Sie in die Speicherung von Cookies oder in den Zugriff auf Informationen in Ihr Endgerät (z. B. via Device-Fingerprinting) eingewilligt haben, erfolgt die Datenverarbeitung zusätzlich auf Grundlage von § 25 Abs. 1 TDDDG. Die Einwilligung ist jederzeit widerrufbar. Sind Ihre Daten zur Vertragserfüllung oder zur Durchführung vorvertraglicher Maßnahmen erforderlich, verarbeiten wir Ihre Daten auf Grundlage des Art. 6 Abs. 1 lit. b DSGVO. Des Weiteren verarbeiten wir Ihre Daten, sofern diese zur Erfüllung einer rechtlichen Verpflichtung erforderlich sind auf Grundlage von Art. 6 Abs. 1 lit. c DSGVO. Die Datenverarbeitung kann ferner auf Grundlage unseres berechtigten Interesses nach Art. 6 Abs. 1 lit. f DSGVO erfolgen. Über die jeweils im Einzelfall einschlägigen Rechtsgrundlagen wird in den folgenden Absätzen dieser Datenschutzerklärung informiert.
+                    </p>
+
+                    <h3 class="ds-subheading">Empfänger von personenbezogenen Daten</h3>
+                    <p class="ds-text">
+                        Im Rahmen unserer Geschäftstätigkeit arbeiten wir mit verschiedenen externen Stellen zusammen. Dabei ist teilweise auch eine Übermittlung von personenbezogenen Daten an diese externen Stellen erforderlich. Wir geben personenbezogene Daten nur dann an externe Stellen weiter, wenn dies im Rahmen einer Vertragserfüllung erforderlich ist, wenn wir gesetzlich hierzu verpflichtet sind (z. B. Weitergabe von Daten an Steuerbehörden), wenn wir ein berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO an der Weitergabe haben oder wenn eine sonstige Rechtsgrundlage die Datenweitergabe erlaubt. Beim Einsatz von Auftragsverarbeitern geben wir personenbezogene Daten unserer Kunden nur auf Grundlage eines gültigen Vertrags über Auftragsverarbeitung weiter. Im Falle einer gemeinsamen Verarbeitung wird ein Vertrag über gemeinsame Verarbeitung geschlossen.
+                    </p>
+
+                    <h3 class="ds-subheading">Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>
+                    <p class="ds-text">
+                        Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.
+                    </p>
+
+                    <h3 class="ds-subheading">Widerspruchsrecht gegen die Datenerhebung (Art. 21 DSGVO)</h3>
+                    <div class="bg-red-50 border-l-4 border-red-500 p-6 my-6">
+                        <p class="ds-text font-semibold text-red-900 mb-4 uppercase text-sm tracking-wide">
+                            Wenn die Datenverarbeitung auf Grundlage von Art. 6 Abs. 1 lit. e oder f DSGVO erfolgt, haben Sie jederzeit das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, gegen die Verarbeitung Ihrer personenbezogenen Daten Widerspruch einzulegen; dies gilt auch für ein auf diese Bestimmungen gestütztes Profiling.
+                        </p>
+                        <p class="ds-text text-red-900 mb-0">
+                            Werden Ihre personenbezogenen Daten verarbeitet, um Direktwerbung zu betreiben, so haben Sie das Recht, jederzeit Widerspruch gegen die Verarbeitung Sie betreffender personenbezogener Daten zum Zwecke derartiger Werbung einzulegen; dies gilt auch für das Profiling, soweit es mit solcher Direktwerbung in Verbindung steht.
+                        </p>
+                    </div>
+
+                    <h3 class="ds-subheading">Beschwerderecht bei der zuständigen Aufsichtsbehörde</h3>
+                    <p class="ds-text">
+                        Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.
+                    </p>
+
+                    <h3 class="ds-subheading">Recht auf Datenübertragbarkeit</h3>
+                    <p class="ds-text">
+                        Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.
+                    </p>
+
+                    <h3 class="ds-subheading">Auskunft, Berichtigung und Löschung</h3>
+                    <p class="ds-text">
+                        Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden.
+                    </p>
+
+                    <h3 class="ds-subheading">Recht auf Einschränkung der Verarbeitung</h3>
+                    <p class="ds-text">
+                        Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Hierzu können Sie sich jederzeit an uns wenden. Das Recht auf Einschränkung der Verarbeitung besteht in folgenden Fällen:
+                    </p>
+                    <ul class="ds-list">
+                        <li>Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, benötigen wir in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Prüfung haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
+                        <li>Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah/geschieht, können Sie statt der Löschung die Einschränkung der Datenverarbeitung verlangen.</li>
+                        <li>Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
+                        <li>Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
+                    </ul>
+                    <p class="ds-text">
+                        Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten – von ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder eines Mitgliedstaats verarbeitet werden.
+                    </p>
+
+                    <h3 class="ds-subheading">SSL- bzw. TLS-Verschlüsselung</h3>
+                    <div class="flex items-start gap-4 p-4 bg-green-50 border border-green-200 rounded-lg">
+                        <i data-lucide="lock" class="w-6 h-6 text-green-600 flex-shrink-0 mt-1"></i>
+                        <div>
+                            <p class="ds-text mb-0">
+                                Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine <strong>SSL- bzw. TLS-Verschlüsselung</strong>. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://" auf „https://" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.
+                            </p>
+                            <p class="ds-text mt-2 mb-0">
+                                Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 4 -->
+                <section id="erfassung" class="ds-section">
+                    <h2 class="font-display text-2xl font-bold text-primary-900 mb-6 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0">
+                            <span class="text-primary-900 font-bold">4</span>
+                        </div>
+                        Datenerfassung auf dieser Website
+                    </h2>
+                    
+                    <h3 class="ds-subheading">Server-Log-Dateien</h3>
+                    <p class="ds-text">
+                        Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
+                    </p>
+                    <ul class="ds-list">
+                        <li>Browsertyp und Browserversion</li>
+                        <li>verwendetes Betriebssystem</li>
+                        <li>Referrer URL</li>
+                        <li>Hostname des zugreifenden Rechners</li>
+                        <li>Uhrzeit der Serveranfrage</li>
+                        <li>IP-Adresse</li>
+                    </ul>
+                    <p class="ds-text">
+                        Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.
+                    </p>
+                    <p class="ds-text">
+                        Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs.1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Optimierung seiner Website – hierzu müssen die Server-Log-Files erfasst werden.
+                    </p>
+
+                    <h3 class="ds-subheading">Anfrage per E-Mail, Telefon oder Telefax</h3>
+                    <p class="ds-text">
+                        Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+                    </p>
+                    <p class="ds-text">
+                        Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist jederzeit widerrufbar.
+                    </p>
+                    <p class="ds-text">
+                        Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt.
+                    </p>
+                </section>
+
+                <!-- Source -->
+                <div class="mt-12 pt-8 border-t border-gray-200 text-center">
+                    <p class="text-sm text-gray-500">
+                        Quelle: <a href="https://www.datenschutzerklaerung.de" target="_blank" rel="noopener noreferrer" class="text-primary-900 hover:text-accent-600 transition-colors underline">https://www.datenschutzerklaerung.de</a>
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Zurück Button -->
+            <div class="mt-8 text-center">
+                <a href="/" class="inline-flex items-center gap-2 text-gray-600 hover:text-primary-900 transition-colors font-medium">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                    Zurück zur Startseite
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 border-t border-primary-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded bg-accent-400 flex items-center justify-center text-primary-900 font-bold">
+                        <i data-lucide="sun" class="w-5 h-5"></i>
+                    </div>
+                    <span class="font-display font-bold text-lg text-white">
+                        Solarreinigung<span class="text-accent-400">Hamburg</span>
+                    </span>
+                </div>
+                <div class="flex gap-8 text-sm text-gray-400">
+                    <a href="/impressum/" class="hover:text-white transition-colors">Impressum</a>
+                    <span class="text-white font-medium">Datenschutz</span>
+                </div>
+                <div class="text-sm text-gray-500">
+                    © 2026 Solarreinigung Hamburg
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solarreinigung Hamburg | Professionelle PV-Reinigung</title>
+    <meta name="description" content="Professionelle Solarreinigung in Hamburg ✓ Werterhalt Ihrer PV-Anlage ✓ Schonende Reinwasser-Technik ✓ Thermografie-Check ✓ Kostenloses Angebot. Jetzt anrufen!">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                        display: ['Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0f4f8',
+                            100: '#d9e2ec',
+                            200: '#bcccdc',
+                            300: '#9fb3c8',
+                            400: '#829ab1',
+                            500: '#627d98',
+                            600: '#486581',
+                            700: '#334e68',
+                            800: '#243b53',
+                            900: '#1e3a5f',
+                        },
+                        accent: {
+                            50: '#fdf8f3',
+                            100: '#f9e8d8',
+                            200: '#f2d2b3',
+                            300: '#e8b88e',
+                            400: '#d4a574',
+                            500: '#c9956b',
+                            600: '#b8805a',
+                            700: '#a06b4b',
+                            800: '#88563d',
+                            900: '#704530',
+                        },
+                        cream: '#F8F7F2',
+                        charcoal: '#2d3748',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased selection:bg-primary-200 selection:text-primary-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300 bg-white/95 backdrop-blur-sm border-b border-gray-200" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded bg-primary-900 flex items-center justify-center text-white">
+                        <i data-lucide="sun" class="w-6 h-6"></i>
+                    </div>
+                    <span class="font-display font-bold text-xl tracking-tight text-primary-900">
+                        Solarreinigung<span class="text-accent-400">Hamburg</span>
+                    </span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#vorteile" class="text-gray-600 hover:text-primary-900 transition-colors px-3 py-2 rounded-md text-sm font-medium">Vorteile</a>
+                        <a href="#expertise" class="text-gray-600 hover:text-primary-900 transition-colors px-3 py-2 rounded-md text-sm font-medium">Expertise</a>
+                        <a href="#ablauf" class="text-gray-600 hover:text-primary-900 transition-colors px-3 py-2 rounded-md text-sm font-medium">Ablauf</a>
+                        <a href="#faq" class="text-gray-600 hover:text-primary-900 transition-colors px-3 py-2 rounded-md text-sm font-medium">FAQ</a>
+                        <a href="#kontakt" class="btn-primary px-6 py-2.5 rounded text-sm font-medium">
+                            Angebot anfordern
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center hero-bg pt-20">
+        <div class="absolute inset-0 opacity-30 dot-pattern"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-gray-200 mb-8 reveal-up shadow-sm">
+                <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                <span class="text-sm font-medium text-gray-600">Verfügbar in Hamburg & Umgebung</span>
+            </div>
+            
+            <h1 class="font-display text-5xl md:text-6xl font-bold tracking-tight mb-6 reveal-up leading-tight text-primary-900">
+                Solarreinigung Hamburg<br>
+                <span class="text-accent-500">Professionell. Sicher. Gründlich.</span>
+            </h1>
+            
+            <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-600 mb-10 reveal-up leading-relaxed">
+                Professionelle Reinigung Ihrer Photovoltaikanlage in Hamburg. Wir sichern den <strong>Werterhalt Ihrer Investition</strong> durch fachgerechte Reinigung mit entmineralisiertem Wasser und thermografischer Vorab-Prüfung.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center reveal-up">
+                <a href="#kontakt" class="btn-primary px-8 py-4 rounded font-semibold text-lg flex items-center gap-2">
+                    Kostenloses Angebot anfordern
+                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+                <a href="#expertise" class="btn-secondary px-8 py-4 rounded font-semibold text-lg flex items-center gap-2">
+                    <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                    Mehr erfahren
+                </a>
+            </div>
+
+            <!-- Stats - KUNDENNUTZEN FOKUS -->
+            <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto border-t border-gray-200 pt-10 reveal-up">
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary-100 flex items-center justify-center">
+                        <i data-lucide="shield-check" class="w-8 h-8 text-primary-900"></i>
+                    </div>
+                    <div class="text-lg font-display font-bold text-primary-900 mb-1">Werterhalt</div>
+                    <div class="text-sm text-gray-500">Schutz Ihrer Investition</div>
+                </div>
+                <div class="text-center border-l-0 md:border-l border-r-0 md:border-r border-gray-200">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary-100 flex items-center justify-center">
+                        <i data-lucide="droplets" class="w-8 h-8 text-primary-900"></i>
+                    </div>
+                    <div class="text-lg font-display font-bold text-primary-900 mb-1">Ohne Chemie</div>
+                    <div class="text-sm text-gray-500">Reinwasser-Technologie</div>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary-100 flex items-center justify-center">
+                        <i data-lucide="search" class="w-8 h-8 text-primary-900"></i>
+                    </div>
+                    <div class="text-lg font-display font-bold text-primary-900 mb-1">Sicherheits-Check</div>
+                    <div class="text-sm text-gray-500">Thermografie inklusive</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="vorteile" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal-up">
+                <div class="accent-line mx-auto"></div>
+                <h2 class="font-display text-3xl md:text-4xl font-bold mb-6 text-primary-900">Ihre Vorteile auf einen Blick</h2>
+                <p class="text-gray-600 text-lg">Warum professionelle Pflege Ihrer Solaranlage wichtig ist</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card-elegant p-8 rounded-lg text-center reveal-up">
+                    <div class="benefit-icon">
+                        <i data-lucide="shield-check" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-display text-lg font-bold mb-2 text-primary-900">Werterhalt</h3>
+                    <p class="text-gray-600 text-sm">Schutz Ihrer Investition vor Korrosion, Materialschäden und vorzeitigem Verschleiß</p>
+                </div>
+
+                <div class="card-elegant p-8 rounded-lg text-center reveal-up" style="transition-delay: 100ms;">
+                    <div class="benefit-icon">
+                        <i data-lucide="droplets" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-display text-lg font-bold mb-2 text-primary-900">Schonende Reinigung</h3>
+                    <p class="text-gray-600 text-sm">Reinwasser-Technologie ohne Chemie – schont Module und Umwelt gleichermaßen</p>
+                </div>
+
+                <div class="card-elegant p-8 rounded-lg text-center reveal-up" style="transition-delay: 200ms;">
+                    <div class="benefit-icon">
+                        <i data-lucide="search" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-display text-lg font-bold mb-2 text-primary-900">Früherkennung</h3>
+                    <p class="text-gray-600 text-sm">Thermografische Prüfung inklusive – Defekte werden vor der Reinigung erkannt</p>
+                </div>
+
+                <div class="card-elegant p-8 rounded-lg text-center reveal-up" style="transition-delay: 300ms;">
+                    <div class="benefit-icon">
+                        <i data-lucide="clipboard-check" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-display text-lg font-bold mb-2 text-primary-900">Dokumentation</h3>
+                    <p class="text-gray-600 text-sm">Lückenlose Dokumentation für Garantiefälle und Versicherungen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-24 bg-cream relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="reveal-up prose-custom">
+                <div class="accent-line"></div>
+                <h2 class="font-display text-3xl md:text-4xl font-bold mb-8 text-primary-900">Professionelle Solarreinigung in Hamburg</h2>
+                
+                <p>
+                    Als spezialisiertes Unternehmen für <strong>Solarreinigung in Hamburg</strong> kennen wir die spezifischen Herausforderungen, denen Photovoltaikanlagen in der Metropolregion ausgesetzt sind. Die Kombination aus Hafennähe, Industrie, dichtem Verkehr und küstennahem Klima schafft ein einzigartiges Verschmutzungsprofil, das fundiertes Fachwissen und die richtige Reinigungstechnik erfordert.
+                </p>
+
+                <h3>Die Hamburger Herausforderung</h3>
+                
+                <p>
+                    Photovoltaikanlagen in Hamburg sind ständig Umwelteinflüssen ausgesetzt, die über das hinausgehen, was in ländlichen Regionen üblich ist. Die Nähe zum Hafen und der dichte Schiffsverkehr sorgen für erhöhte Belastung durch Ruß und Feinstaub. Industrieabgase lagern sich als ölige Schichten auf den Modulen ab, während der Straßenverkehr der Großstadt zusätzlichen Staub und Abgasrückstände produziert.
+                </p>
+
+                <p>
+                    Hinzu kommen biologische Verschmutzungen: Vogelkot, Pollenflug aus den umliegenden Parks und Elbwiesen sowie der typische Moos- und Algenbewuchs in den feuchten Herbst- und Wintermonaten der Hansestadt. Diese Mischung aus mineralischen, öligen und biologischen Belägen erfordert eine professionelle Reinigungsstrategie, die über das einfache Abspritzen hinausgeht.
+                </p>
+
+                <h3>Warum Regen allein nicht ausreicht</h3>
+                
+                <p>
+                    <strong>Ein weitverbreitetes Missverständnis:</strong> Regen reinigt Solaranlagen effektiv. Das Gegenteil ist der Fall. Während Niederschläge lose, trockene Partikel tatsächlich abwaschen können, haften mineralische Ablagerungen, ölige Rußrückstände und biologische Beläge fest an der Oberfläche. Sie bilden eine mikroskopisch dünne Schicht, die das Sonnenlicht streut und die Lichtdurchlässigkeit der Module messbar reduziert.
+                </p>
+
+                <p>
+                    Noch problematischer: Hamburger Regenwasser ist je nach Luftbelastung und Windrichtung nicht neutral. Es kann kalkhaltige Rückstände hinterlassen, die sich bei Trocknung als weiße Schlieren auf dem Glas abzeichnen und zusätzlich die Performance mindern. In Extremfällen kann leicht saurer Regen die Antireflexbeschichtung der Module langfristig angreifen. Professionelle Solarreinigung setzt hier an: Wir entfernen nicht nur den sichtbaren Schmutz, sondern auch die unsichtbaren Rückstände, die den Wirkungsgrad Ihrer Anlage beeinträchtigen.
+                </p>
+
+                <h3>Die wirtschaftlichen Folgen von Verschmutzung</h3>
+                
+                <p>
+                    Die Konsequenzen einer unterlassenen Reinigung sind erheblich. Studien und unsere langjährige Praxiserfahrung zeigen Leistungsminderungen zwischen <strong>8% und 25%</strong>, je nach Verschmutzungsgrad und Standort. Bei einer typischen 10-kWp-Anlage in Hamburg bedeutet dies bei aktuellen Einspeisevergütungen einen finanziellen Verlust von mehreren hundert Euro pro Jahr.
+                </p>
+
+                <p>
+                    Die Verschmutzung bildet eine Art permanente Schattenschicht. Sie reduziert die Lichtdurchlässigkeit und erhöht gleichzeitig die Zelltemperatur – ein Zusammenspiel, das die Effizienz der Module drastisch senkt. Was bei der Anschaffung als rentables Projekt kalkuliert wurde, entwickelt sich durch mangelnde Pflege schnell zu einer suboptimalen Kapitalanlage. Gerade bei älteren Anlagen, deren Vergütungssätze noch attraktiv sind, zählt jede verlorene Kilowattstunde.
+                </p>
+
+                <h3>Langfristiger Werterhalt durch Fachpflege</h3>
+                
+                <p>
+                    Regelmäßige professionelle Reinigung ist mehr als eine Frage der Effizienz – sie ist eine Investition in die Lebensdauer Ihrer Anlage. Moosbewuchs zwischen den Modulen kann Feuchtigkeit einschließen und im Winter zu Frostschäden führen. Aggressive biologische Beläge greifen langfristig die Dichtungen und Rahmenmaterialien an. Durch frühzeitige Entfernung dieser Beläge schützen Sie nicht nur den jährlichen Ertrag, sondern vermeiden kostspielige Schäden an der Gesamtanlage.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verfahren Section -->
+    <section class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <div class="reveal-up prose-custom">
+                    <div class="accent-line"></div>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold mb-8 text-primary-900">Unsere Reinigungstechnik</h2>
+                    
+                    <p>
+                        Für eine fachgerechte Reinigung sollte kein gewöhnliches Leitungswasser oder willkürliche Reinigungsmittel verwendet werden. Normales Hamburger Leitungswasser ist zu hart – es hinterlässt Kalkflecken, die die Lichtdurchlässigkeit zusätzlich reduzieren und die Optik beeinträchtigen. Chemische Reiniger können die Antireflexbeschichtung der Module angreifen und Garantieansprüche gefährden.
+                    </p>
+
+                    <h3>Reinwasser-Osmose: Die Pharmaqualität für Ihre Module</h3>
+                    
+                    <p>
+                        Wir setzen ausschließlich auf <strong>entmineralisiertes Wasser</strong>, hergestellt durch das Osmose-Verfahren. Dieses Wasser ist vollkommen weich und enthält keine gelösten Salze oder Mineralien. Es löst Schmutz durch seine physikalischen Eigenschaften – die hohe Lösekraft durch Ionenarmut – und trocknet rückstandsfrei ab. Keine Streifen, keine Schlieren, keine Beschädigung.
+                    </p>
+
+                    <p>
+                        Die Osmose-Technik arbeitet mit speziellen Filteranlagen, die das Wasser direkt vor Ort aufbereiten. Das Ergebnis ist Reinwasser in Pharmaqualität, das sanft zur Oberfläche ist, aber hartnäckig gegen Verschmutzungen. Besonders bei den öligen Rußablagerungen, die für urbane Regionen wie Hamburg typisch sind, zeigt diese Methode ihre Überlegenheit gegenüber einfachem Wischwasser.
+                    </p>
+
+                    <h3>Spezialisierte Ausrüstung und schonende Handhabung</h3>
+                    
+                    <p>
+                        Zum Einsatz kommen spezielle Stangensysteme mit weichen Bürstenköpfen, die das Modulglas schonend reinigen, ohne Kratzer zu hinterlassen. Wasserführende Bürsten ermöglichen eine kontinuierliche Spülung während des Reinigungsvorgangs. Für große Dachflächen oder Gewerbeanlagen stehen auch automatisierte Reinigungshilfen zur Verfügung.
+                    </p>
+
+                    <p>
+                        Ein kritischer Faktor, den Laien oft unterschätzen: die <strong>Temperaturdifferenz</strong>. Wir achten strikt darauf, dass der Unterschied zwischen Reinigungswasser und Moduloberfläche maximal 20 Kelvin beträgt. Bei großer Abweichung besteht die Gefahr von Glasbruch durch thermische Spannungsrisse – ein Schaden, der die gesamte Anlage gefährden kann.
+                    </p>
+                </div>
+
+                <div class="space-y-6 reveal-up">
+                    <div class="card-elegant p-8 rounded-lg">
+                        <div class="icon-box mb-6">
+                            <i data-lucide="droplets" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mb-3 text-primary-900">Osmose-Filterung</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Mehrstufige Filterung entfernt 99% aller Mineralien, Salze und Verunreinigungen. Das Ergebnis: rein H₂O, das rückstandsfrei verdunstet.
+                        </p>
+                    </div>
+
+                    <div class="card-elegant p-8 rounded-lg">
+                        <div class="icon-box mb-6">
+                            <i data-lucide="brush" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mb-3 text-primary-900">Spezialbürsten</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Weiche Borsten aus speziellen Synthetikmaterialien reinigen effektiv, ohne die empfindliche Antireflexbeschichtung zu beschädigen.
+                        </p>
+                    </div>
+
+                    <div class="card-elegant p-8 rounded-lg">
+                        <div class="icon-box mb-6">
+                            <i data-lucide="thermometer" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mb-3 text-primary-900">Temperaturkontrolle</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Messung der Modultemperatur vor der Reinigung. Maximale Differenz 20 Kelvin – Sicherheit geht vor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sicherheit Section -->
+    <section class="py-24 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1 space-y-6 reveal-up">
+                    <div class="card-elegant p-6 rounded-lg border-l-4 border-red-500">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center text-red-600 flex-shrink-0">
+                                <i data-lucide="alert-triangle" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary-900 mb-1">Hot-Spots erkennen</h4>
+                                <p class="text-sm text-gray-600">Defekte Zellen werden vor der Reinigung identifiziert, um Lichtbögen zu vermeiden.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-elegant p-6 rounded-lg border-l-4 border-primary-900">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-primary-50 flex items-center justify-center text-primary-900 flex-shrink-0">
+                                <i data-lucide="shield" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary-900 mb-1">Absturzsicherung</h4>
+                                <p class="text-sm text-gray-600">Arbeit in der Höhe nach DGUV-Richtlinien mit zertifizierter Ausrüstung.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-elegant p-6 rounded-lg border-l-4 border-accent-400">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-accent-50 flex items-center justify-center text-accent-600 flex-shrink-0">
+                                <i data-lucide="zap-off" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary-900 mb-1">Stromschutz</h4>
+                                <p class="text-sm text-gray-600">VDE-geprüfte, isolierte Werkzeuge für den Umgang mit Hochspannung.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-1 lg:order-2 reveal-up prose-custom">
+                    <div class="accent-line"></div>
+                    <h2 class="font-display text-3xl md:text-4xl font-bold mb-8 text-primary-900">Sicherheit durch professionelle Vorab-Inspektion</h2>
+                    
+                    <p>
+                        Vor jeder Reinigung ist eine gründliche Überprüfung der Anlage zwingend erforderlich. Dieser Schritt ist nicht optional, sondern essenziell für die Sicherheit unserer Mitarbeiter und den Erhalt Ihrer Anlage. Wir setzen hier auf <strong>thermografische Untersuchung</strong> mit hochauflösender Wärmebildkamera.
+                    </p>
+
+                    <h3>Hot-Spots: Die unsichtbare Gefahr</h3>
+                    
+                    <p>
+                        Defekte Zellen, sogenannte Hot-Spots, entstehen, wenn einzelne Solarzellen durch Verschmutzung oder interne Schäden nicht mehr richtig funktionieren und sich übermäßig erhitzen. Diese Stellen können Temperaturen von über 100°C erreichen – ein erhebliches Sicherheitsrisiko. Mittels Wärmebildkamera identifizieren wir diese Defekte vor der Reinigung.
+                    </p>
+
+                    <p>
+                        <strong>Beschädigte Module dürfen aus Sicherheitsgründen nicht nass gereinigt werden.</strong> Das Waschen heißer oder defekter Zellen kann Lichtbögen auslösen. Bei Gleichspannungsanlagen besteht zudem die Gefahr von Stromschlägen mit Spannungen von bis zu mehreren hundert Volt. Unsere thermografische Untersuchung erkennt diese Risiken, bevor sie zur Gefahr werden.
+                    </p>
+
+                    <h3>DGUV-Richtlinien: Höchste Sicherheitsstandards</h3>
+                    
+                    <p>
+                        Da PV-Anlagen meist in der Höhe installiert sind, gelten strengste Sicherheitsvorschriften. Wir arbeiten nach den DGUV-Richtlinien (Deutsche Gesetzliche Unfallversicherung) mit zertifizierter Absturzsicherung, fachkundigem Personal und isolierten Arbeitsmitteln. Jeder Mitarbeiter ist speziell geschult für den Umgang mit Photovoltaikanlagen und den spezifischen Gefahren elektrischer Anlagen. Ihre Sicherheit und die unserer Mitarbeiter hat oberste Priorität.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ablauf Section -->
+    <section id="ablauf" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal-up">
+                <div class="accent-line mx-auto"></div>
+                <h2 class="font-display text-3xl md:text-4xl font-bold mb-6 text-primary-900">So funktioniert unsere Zusammenarbeit</h2>
+                <p class="text-gray-600 text-lg">Drei Schritte zur professionellen Pflege Ihrer Anlage</p>
+            </div>
+
+            <div class="relative">
+                <div class="hidden lg:block absolute top-16 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-accent-400 to-transparent z-0"></div>
+
+                <div class="grid lg:grid-cols-3 gap-8 relative z-10">
+                    <div class="card-elegant p-6 rounded-lg reveal-up text-center">
+                        <div class="w-12 h-12 mx-auto bg-primary-900 rounded-full flex items-center justify-center text-lg font-bold text-white mb-4 shadow-md">1</div>
+                        <h3 class="font-display text-lg font-bold mb-2 text-primary-900">Besichtigung</h3>
+                        <p class="text-sm text-gray-600">
+                            Vor-Ort-Termin zur Begehung Ihrer Anlage. Wir bewerten den Verschmutzungsgrad, prüfen die Zugänglichkeit und identifizieren eventuelle Besonderheiten Ihres Daches.
+                        </p>
+                    </div>
+
+                    <div class="card-elegant p-6 rounded-lg reveal-up text-center" style="transition-delay: 100ms;">
+                        <div class="w-12 h-12 mx-auto bg-primary-900 rounded-full flex items-center justify-center text-lg font-bold text-white mb-4 shadow-md">2</div>
+                        <h3 class="font-display text-lg font-bold mb-2 text-primary-900">Angebot</h3>
+                        <p class="text-sm text-gray-600">
+                            Sie erhalten ein transparentes, unverbindliches Angebot basierend auf Anlagengröße, Zustand und Aufwand – ohne versteckte Kosten oder Überraschungen.
+                        </p>
+                    </div>
+
+                    <div class="card-elegant p-6 rounded-lg reveal-up text-center border-2 border-accent-400" style="transition-delay: 200ms;">
+                        <div class="w-12 h-12 mx-auto bg-accent-400 rounded-full flex items-center justify-center text-lg font-bold text-white mb-4 shadow-md">3</div>
+                        <h3 class="font-display text-lg font-bold mb-2 text-primary-900">Reinigung</h3>
+                        <p class="text-sm text-gray-600">
+                            <strong class="text-accent-600">Zuerst:</strong> Thermografische Prüfung aller Module. <strong>Dann:</strong> Professionelle Reinigung mit Reinwasser-Technologie und abschließender Dokumentation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 p-6 rounded-lg bg-red-50 border border-red-200 reveal-up">
+                <div class="flex items-start gap-4">
+                    <i data-lucide="alert-circle" class="w-6 h-6 text-red-600 flex-shrink-0 mt-1"></i>
+                    <div>
+                        <h4 class="font-bold text-primary-900 mb-2">Sicherheit hat immer Priorität</h4>
+                        <p class="text-gray-700">
+                            Die eigentliche Reinigung erfolgt nur nach erfolgter thermografischer Untersuchung. Sollten wir Defekte feststellen, wird zunächst repariert, dann gereinigt – nie umgekehrt. Das Waschen beschädigter Module kann zu Lichtbögen, Stromschlägen oder weiterem Glasschaden führen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-cream">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal-up">
+                <div class="accent-line mx-auto"></div>
+                <h2 class="font-display text-3xl md:text-4xl font-bold mb-6 text-primary-900">Häufig gestellte Fragen</h2>
+            </div>
+
+            <div class="space-y-4 reveal-up" itemscope itemtype="https://schema.org/FAQPage">
+                
+                <details class="card-elegant rounded-lg overflow-hidden group" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <summary class="p-6 flex justify-between items-center cursor-pointer list-none bg-white hover:bg-gray-50 transition-colors" itemprop="name">
+                        <h3 class="font-display text-lg font-bold text-primary-900 pr-4">Warum reicht Regen nicht zur Reinigung aus?</h3>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+                    </summary>
+                    <div class="p-6 pt-0 bg-white border-t border-gray-100" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p class="text-gray-600 mt-4" itemprop="text">
+                            Regen wäscht nur lose Schmutzpartikel ab. Mineralische Ablagerungen, ölige Rückstände aus Abgasen und biologischer Belag wie Moos oder Algen haften fest. Hamburger Regenwasser kann je nach Luftqualität kalkhaltige Rückstände hinterlassen, die sich als weiße Schlieren abzeichnen. Professionelle Reinigung mit entmineralisiertem Wasser entfernt diese hartnäckigen Verschmutzungen gründlich und rückstandsfrei.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="card-elegant rounded-lg overflow-hidden group" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <summary class="p-6 flex justify-between items-center cursor-pointer list-none bg-white hover:bg-gray-50 transition-colors" itemprop="name">
+                        <h3 class="font-display text-lg font-bold text-primary-900 pr-4">Wie oft sollte eine Solaranlage gereinigt werden?</h3>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+                    </summary>
+                    <div class="p-6 pt-0 bg-white border-t border-gray-100" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p class="text-gray-600 mt-4" itemprop="text">
+                            Für Hamburg empfehlen wir eine jährliche Inspektion und bei Bedarf Reinigung. Standorte mit starker Verschmutzung – etwa Nahe zu Hauptverkehrsstraßen, Industrie oder dem Hafen – profitieren von halbjährlicher Pflege. Landwirtschaftliche Anlagen sollten aufgrund von Staub und Ammoniakbelastung ebenfalls zweimal jährlich geprüft werden. Nach starkem Pollenflug oder Stürmen kann eine zusätzliche Kontrolle sinnvoll sein.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="card-elegant rounded-lg overflow-hidden group" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <summary class="p-6 flex justify-between items-center cursor-pointer list-none bg-white hover:bg-gray-50 transition-colors" itemprop="name">
+                        <h3 class="font-display text-lg font-bold text-primary-900 pr-4">Kann ich die Module selbst reinigen?</h3>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+                    </summary>
+                    <div class="p-6 pt-0 bg-white border-t border-gray-100" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p class="text-gray-600 mt-4" itemprop="text">
+                            Davon raten wir dringend ab. Ohne Fachkenntnisse besteht Stromschlaggefahr (bis zu 1000V Gleichspannung), Absturzrisiko und die Gefahr, beschädigte Module zu übersehen. Hartes Leitungswasser hinterlässt Kalkflecken, unsachgemäße Reinigung kann Garantieansprüche gefährden. DGUV-Richtlinien schreiben für Arbeiten an PV-Anlagen spezielle Sicherheitsmaßnahmen vor, die nur Fachpersonal umsetzen darf.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="card-elegant rounded-lg overflow-hidden group" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <summary class="p-6 flex justify-between items-center cursor-pointer list-none bg-white hover:bg-gray-50 transition-colors" itemprop="name">
+                        <h3 class="font-display text-lg font-bold text-primary-900 pr-4">Was kostet die Solarreinigung in Hamburg?</h3>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0"></i>
+                    </summary>
+                    <div class="p-6 pt-0 bg-white border-t border-gray-100" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <p class="text-gray-600 mt-4" itemprop="text">
+                            Die Kosten richten sich nach Anlagengröße, Zugänglichkeit und Verschmutzungsgrad. Eine typische 10-kWp-Anlage auf einem Einfamilienhaus liegt bei 200-400 Euro. Diese Investition in die Werterhaltung und Pflege Ihrer Anlage amortisiert sich typischerweise innerhalb weniger Monate durch verbesserte Performance und vermiedene Schäden. Gerne erstellen wir Ihnen ein kostenloses, unverbindliches Angebot.
+                        </p>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-primary-900 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 dot-pattern-white"></div>
+        
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 reveal-up">
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-white">Sichern Sie den Werterhalt Ihrer Solaranlage</h2>
+            <p class="text-xl text-gray-300 mb-10">
+                Professionelle Reinigung und Pflege für langfristige Performance und Schutz Ihrer Investition.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#kontakt" class="px-8 py-4 bg-accent-400 text-primary-900 rounded font-bold text-lg hover:bg-accent-300 transition-all flex items-center justify-center gap-2">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                    Jetzt anrufen
+                </a>
+                <a href="mailto:info@solarreinigung-hamburg.de" class="px-8 py-4 bg-transparent border-2 border-white text-white rounded font-bold text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-2">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                    E-Mail senden
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontakt" class="py-24 bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div class="reveal-up">
+                    <div class="accent-line"></div>
+                    <h2 class="font-display text-3xl font-bold mb-6 text-primary-900">Kontaktieren Sie uns</h2>
+                    <p class="text-gray-600 mb-8 text-lg">
+                        Wir freuen uns auf Ihre Anfrage. Teilen Sie uns Ihre Anlagendaten mit – wir erstellen Ihnen ein unverbindliches Angebot.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-primary-100 flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="phone" class="w-6 h-6 text-primary-900"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 uppercase tracking-wider mb-1 font-medium">Telefon</p>
+                                <p class="text-xl font-bold text-primary-900">040/22633763</p>
+                                <p class="text-sm text-gray-500">Mo-Fr: 09:00 - 15:00 Uhr</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-primary-100 flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="mail" class="w-6 h-6 text-primary-900"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 uppercase tracking-wider mb-1 font-medium">E-Mail</p>
+                                <p class="text-xl font-bold text-primary-900">info@solarreinigung-hamburg.de</p>
+                                <p class="text-sm text-gray-500">Antwort innerhalb 24h</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-primary-100 flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-primary-900"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 uppercase tracking-wider mb-1 font-medium">Adresse</p>
+                                <p class="text-lg font-bold text-primary-900">Solarreinigung Hamburg</p>
+                                <p class="text-gray-600">Beerbuschstieg 10a<br>22395 Hamburg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-elegant p-8 rounded-lg reveal-up">
+                    <h3 class="font-display text-xl font-bold mb-6 text-primary-900">Schnell kontaktieren</h3>
+                    <div class="space-y-4">
+                        <a href="tel:04022633763" class="flex items-center justify-between p-4 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors group border border-gray-200">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-700">
+                                    <i data-lucide="phone-call" class="w-5 h-5"></i>
+                                </div>
+                                <span class="font-medium text-primary-900">Direkt anrufen</span>
+                            </div>
+                            <i data-lucide="arrow-right" class="w-5 h-5 text-gray-400 group-hover:text-primary-900 transition-colors"></i>
+                        </a>
+
+                        <a href="mailto:info@solarreinigung-hamburg.de?subject=Anfrage%20Solarreinigung&body=Hallo%20Solarreinigung%20Hamburg,%0A%0Aich%20bin%20an%20einer%20Reinigung%20meiner%20PV-Anlage%20interessiert.%0A%0AAnlagengröße%20(kWp):%20%0AStandort:%20%0AGewünschter%20Zeitraum:%20%0A%0AMit%20freundlichen%20Grüßen" class="flex items-center justify-between p-4 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors group border border-gray-200">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center text-primary-900">
+                                    <i data-lucide="mail-plus" class="w-5 h-5"></i>
+                                </div>
+                                <span class="font-medium text-primary-900">E-Mail mit Vorlage</span>
+                            </div>
+                            <i data-lucide="arrow-right" class="w-5 h-5 text-gray-400 group-hover:text-primary-900 transition-colors"></i>
+                        </a>
+
+                        <div class="p-4 rounded-lg bg-gray-50 border border-gray-200">
+                            <p class="text-sm text-gray-600 mb-2 font-medium">Für Ihre Anfrage benötigen wir:</p>
+                            <ul class="text-sm text-gray-600 space-y-1 list-disc list-inside">
+                                <li>Ungefähre Anlagengröße (kWp)</li>
+                                <li>Standort / PLZ</li>
+                                <li>Letzter Reinigungstermin (falls bekannt)</li>
+                                <li>Besonderheiten (Dachneigung, Zugang etc.)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 border-t border-primary-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded bg-accent-400 flex items-center justify-center text-primary-900 font-bold">
+                        <i data-lucide="sun" class="w-5 h-5"></i>
+                    </div>
+                    <span class="font-display font-bold text-lg text-white">
+                        Solarreinigung<span class="text-accent-400">Hamburg</span>
+                    </span>
+                </div>
+                <div class="flex gap-8 text-sm text-gray-400">
+                    <a href="/impressum/" class="hover:text-white transition-colors">Impressum</a>
+                    <a href="/datenschutz/" class="hover:text-white transition-colors">Datenschutz</a>
+                </div>
+                <div class="text-sm text-gray-500">
+                    © 2026 Solarreinigung Hamburg. Alle Rechte vorbehalten.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
