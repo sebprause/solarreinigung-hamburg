@@ -150,6 +150,25 @@ details[open] summary ~ * {
     opacity: 1;
 }
 
+/* Mobile Optimierungen - Abstand zwischen Navbar und Hero-Content */
+@media (max-width: 768px) {
+    .hero-bg {
+        padding-top: 8rem !important; /* Mehr Abstand nach oben */
+    }
+    
+    /* Zusätzlicher Margin für das erste Element (das Badge) */
+    .hero-bg .reveal-up:first-child {
+        margin-top: 1.5rem;
+    }
+}
+
+/* Noch mehr Abstand für sehr kleine Bildschirme wie iPhone SE */
+@media (max-width: 640px) {
+    .hero-bg {
+        padding-top: 9rem !important;
+    }
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .font-display {
